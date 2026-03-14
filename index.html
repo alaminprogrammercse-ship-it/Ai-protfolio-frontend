@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Specialist | Portfolio V2</title>
+  <meta
+    name="description"
+    content="Advanced futuristic AI Specialist portfolio website."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-grid"></div>
+
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">AI</span>
+        <span class="logo-text">Specialist</span>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="section-badge">AI • ML • NLP • Automation</span>
+          <h1>
+            AI Specialist
+            <span class="gradient-text">Designing Intelligent Digital Products</span>
+          </h1>
+          <p class="hero-tagline">
+            I build production-ready AI solutions using machine learning, deep learning,
+            computer vision, NLP, data science, and modern full-stack technologies.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="resume.pdf" class="btn btn-outline" download>Download Resume</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-card glass">
+              <h3 class="counter" data-target="25">0</h3>
+              <p>AI Projects</p>
+            </div>
+            <div class="stat-card glass">
+              <h3 class="counter" data-target="5">0</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-card glass">
+              <h3 class="counter" data-target="10">0</h3>
+              <p>Core Technologies</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="ai-panel glass">
+            <div class="ai-panel-top">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+
+            <div class="ai-core">
+              <div class="ring ring-1"></div>
+              <div class="ring ring-2"></div>
+              <div class="ring ring-3"></div>
+              <div class="core-center">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+            </div>
+
+            <div class="hero-badges">
+              <span>TensorFlow</span>
+              <span>PyTorch</span>
+              <span>FastAPI</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>MLOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">About Me</span>
+          <h2>AI-focused engineer with strong product vision</h2>
+          <p>
+            I specialize in building real-world AI systems that combine data,
+            models, automation, and user-focused interfaces. I enjoy solving
+            business problems with scalable, modern, and practical AI solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass reveal">
+            <h3>Who I Am</h3>
+            <p>
+              I am an AI Specialist working across predictive analytics,
+              recommendation systems, NLP pipelines, computer vision, chatbot
+              development, and intelligent automation.
+            </p>
+          </div>
+
+          <div class="about-card glass reveal">
+            <h3>Core Stack</h3>
+            <div class="chip-group">
+              <span>Machine Learning</span>
+              <span>Deep Learning</span>
+              <span>NLP</span>
+              <span>Computer Vision</span>
+              <span>Data Science</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>TensorFlow</span>
+              <span>PyTorch</span>
+              <span>Scikit-Learn</span>
+              <span>FastAPI</span>
+              <span>Automation</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Projects</span>
+          <h2>Featured AI Projects</h2>
+          <p>
+            Selected solutions built around machine learning, automation,
+            NLP, analytics, and computer vision.
+          </p>
+        </div>
+
+        <div class="project-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="nlp">NLP</button>
+          <button class="filter-btn" data-filter="vision">Vision</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+          <button class="filter-btn" data-filter="analytics">Analytics</button>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass reveal" data-category="nlp">
+            <div class="project-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3>AI Customer Support Chatbot</h3>
+            <p>
+              Built an intelligent customer support chatbot using NLP, retrieval logic,
+              and API integration for faster support workflows.
+            </p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>NLP</span>
+              <span>Transformers</span>
+              <span>FastAPI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="vision">
+            <div class="project-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Real-Time Object Detection</h3>
+            <p>
+              Designed a computer vision pipeline for live object detection,
+              tracking, and optimized inference performance.
+            </p>
+            <div class="project-tech">
+              <span>OpenCV</span>
+              <span>PyTorch</span>
+              <span>YOLO</span>
+              <span>Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="analytics">
+            <div class="project-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Sales Forecasting Engine</h3>
+            <p>
+              Developed a forecasting system for revenue and demand prediction using
+              time-series modeling and business analytics.
+            </p>
+            <div class="project-tech">
+              <span>TensorFlow</span>
+              <span>Pandas</span>
+              <span>Forecasting</span>
+              <span>Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="vision">
+            <div class="project-icon"><i class="fa-solid fa-file-waveform"></i></div>
+            <h3>Medical Image Classification</h3>
+            <p>
+              Created a deep learning model for medical image classification with
+              preprocessing, validation, and deployment readiness.
+            </p>
+            <div class="project-tech">
+              <span>CNN</span>
+              <span>Keras</span>
+              <span>TensorFlow</span>
+              <span>Healthcare AI</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="automation">
+            <div class="project-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>Workflow Automation Assistant</h3>
+            <p>
+              Automated repetitive business tasks with API orchestration,
+              intelligent document handling, and smart process flows.
+            </p>
+            <div class="project-tech">
+              <span>JavaScript</span>
+              <span>OCR</span>
+              <span>Automation</span>
+              <span>APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline">Demo</a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal" data-category="nlp">
+            <div class="project-icon"><i class="fa-solid fa-language"></i></div>
+            <h3>Sentiment Analysis Engine</h3>
+            <p>
+              Built a multilingual sentiment analysis pipeline for product feedback
+              and customer opinion tracking.
+            </p>
+            <div class="project-tech">
+              <span>Hugging Face</span>
+              <span>Python</span>
+              <span>NLP</span>
+              <span>Analytics</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small">GitHub</a>
+              <a href="#" class="btn btn-small btn-outline">Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Skills</span>
+          <h2>Technical Expertise</h2>
+          <p>
+            A balanced mix of AI research, software engineering, automation,
+            and product-oriented delivery.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-box glass reveal">
+            <div class="skill-title">
+              <span><i class="fa-solid fa-brain"></i> Machine Learning</span>
+              <span>92%</span>
+            </div>
+            <div class="progress"><div class="progress-bar" data-width="92%"></div></div>
+          </div>
+
+          <div class="skill-box glass reveal">
+            <div class="skill-title">
+              <span><i class="fa-solid fa-microchip"></i> Deep Learning</span>
+              <span>88%</span>
+            </div>
+            <div class="progress"><div class="progress-bar" data-width="88%"></div></div>
+          </div>
+
+          <div class="skill-box glass reveal">
+            <div class="skill-title">
+              <span><i class="fa-solid fa-language"></i> NLP</span>
+              <span>90%</span>
+            </div>
+            <div class="progress"><div class="progress-bar" data-width="90%"></div></div>
+          </div>
+
+          <div class="skill-box glass reveal">
+            <div class="skill-title">
+              <span><i class="fa-solid fa-camera"></i> Computer Vision</span>
+              <span>86%</span>
+            </div>
+            <div class="progress"><div class="progress-bar" data-width="86%"></div></div>
+          </div>
+
+          <div class="skill-box glass reveal">
+            <div class="skill-title">
+              <span><i class="fa-brands fa-python"></i> Python</span>
+              <span>95%</span>
+            </div>
+            <div class="progress"><div class="progress-bar" data-width="95%"></div></div>
+          </div>
+
+          <div class="skill-box glass reveal">
+            <div class="skill-title">
+              <span><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span>84%</span>
+            </div>
+            <div class="progress"><div class="progress-bar" data-width="84%"></div></div>
+          </div>
+
+          <div class="skill-box glass reveal">
+            <div class="skill-title">
+              <span><i class="fa-solid fa-network-wired"></i> TensorFlow</span>
+              <span>89%</span>
+            </div>
+            <div class="progress"><div class="progress-bar" data-width="89%"></div></div>
+          </div>
+
+          <div class="skill-box glass reveal">
+            <div class="skill-title">
+              <span><i class="fa-solid fa-fire"></i> PyTorch</span>
+              <span>87%</span>
+            </div>
+            <div class="progress"><div class="progress-bar" data-width="87%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Experience</span>
+          <h2>Career & Achievements</h2>
+          <p>
+            Major milestones across AI, applied research, engineering, and product delivery.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2025 - Present</span>
+              <h3>Senior AI Specialist</h3>
+              <p>Leading end-to-end AI system design, automation platforms, and predictive intelligence workflows.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2024</span>
+              <h3>Certified Deep Learning Engineer</h3>
+              <p>Advanced work in neural networks, NLP, computer vision, model deployment, and production AI systems.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2023</span>
+              <h3>AI Research & Hackathon Finalist</h3>
+              <p>Developed practical AI prototypes, research experiments, and innovative solutions in fast-paced environments.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass">
+              <span class="timeline-date">2022</span>
+              <h3>Machine Learning Engineer</h3>
+              <p>Built analytical models, automation tools, dashboards, and ML-backed business solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Services</span>
+          <h2>What I Can Help You Build</h2>
+          <p>
+            Practical AI services tailored for startups, businesses, and digital products.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card glass reveal">
+            <i class="fa-solid fa-brain"></i>
+            <h3>AI Model Development</h3>
+            <p>Custom ML and DL solutions for prediction, classification, and intelligent decision support.</p>
+          </div>
+
+          <div class="service-card glass reveal">
+            <i class="fa-solid fa-gears"></i>
+            <h3>Automation Systems</h3>
+            <p>Workflow automation for reducing manual operations and boosting business productivity.</p>
+          </div>
+
+          <div class="service-card glass reveal">
+            <i class="fa-solid fa-comment-dots"></i>
+            <h3>Chatbot Development</h3>
+            <p>Conversational AI assistants for customer support, lead generation, and internal operations.</p>
+          </div>
+
+          <div class="service-card glass reveal">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h3>Data Analytics</h3>
+            <p>Forecasting, dashboards, reporting, and data-driven insights for smarter decision-making.</p>
+          </div>
+
+          <div class="service-card glass reveal">
+            <i class="fa-solid fa-user-gear"></i>
+            <h3>AI Consulting</h3>
+            <p>Guidance on AI strategy, tools, architecture, implementation, and product direction.</p>
+          </div>
+
+          <div class="service-card glass reveal">
+            <i class="fa-solid fa-robot"></i>
+            <h3>Computer Vision Solutions</h3>
+            <p>Detection, tracking, image analysis, and visual intelligence systems for modern businesses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Testimonials</span>
+          <h2>What People Say</h2>
+          <p>Feedback from clients, collaborators, and teams.</p>
+        </div>
+
+        <div class="testimonial-wrapper glass reveal">
+          <button class="slider-btn prev" id="prev-testimonial" aria-label="Previous testimonial">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="testimonial-slider" id="testimonial-slider">
+            <div class="testimonial active">
+              <p>“An exceptional AI specialist with strong execution, deep technical knowledge, and business understanding.”</p>
+              <h4>Sarah M.</h4>
+              <span>Product Manager</span>
+            </div>
+
+            <div class="testimonial">
+              <p>“The NLP solution was delivered professionally, efficiently, and with impressive accuracy.”</p>
+              <h4>David R.</h4>
+              <span>Startup Founder</span>
+            </div>
+
+            <div class="testimonial">
+              <p>“One of the best AI-focused implementations we have integrated into our workflow.”</p>
+              <h4>Emily T.</h4>
+              <span>Tech Lead</span>
+            </div>
+          </div>
+
+          <button class="slider-btn next" id="next-testimonial" aria-label="Next testimonial">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="slider-dots" id="slider-dots"></div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-badge">Contact</span>
+          <h2>Let’s Build Something Intelligent</h2>
+          <p>
+            Available for freelance projects, consulting, collaborations, and full-time opportunities.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass reveal">
+            <h3>Get In Touch</h3>
+            <p>
+              Open to AI products, automation platforms, analytics solutions,
+              and intelligent software engineering work.
+            </p>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>jshanel899@gmail.com</span>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Remote / Worldwide</span>
+            </div>
+
+            <div class="social-links">
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+
+          <form class="contact-form glass reveal" id="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="submit-btn">Send Message</button>
+            <p class="form-message" id="form-message"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 AI Specialist. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
